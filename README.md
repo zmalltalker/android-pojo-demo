@@ -15,6 +15,8 @@ where the non-Android (aka. POJO) code will reside. You can use this
 repository as an example or starting point, so to get started you will
 check out this repository into a subdirectory in your Android project.
 
+### Check out the sub project ###
+
 Assuming your Android project's root directory is
 `~/Projects/myproject` you start out by
 
@@ -24,15 +26,20 @@ git checkout https://github.com/zmalltalker/android-pojo-demo.git
 ```
 
 This checks out this repository into the `android-pojo-demo` directory
-under your Android project root. We now want to let Gradle know that
-this is a subproject, so we open `settings.gradle` in your project
-repository and add
+under your Android project root.
+
+### Let Gradle know about the sub project ###
+
+We now want to let Gradle know that this is a subproject, so we open
+`settings.gradle` in your project repository and add
 
 ```gradle
 include ':App', ':android-pojo-demo'
 ```
 
 replacing `App` with whatever your Android subproject is named.
+
+### Add the POJO project as a dependency ###
 
 At this point, we want to add this subproject as a dependency in your
 Android project, so you can use your POJO code from there. We do this
