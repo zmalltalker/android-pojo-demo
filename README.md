@@ -8,12 +8,6 @@ runner. Furthermore, as your POJO code now has fewer depenencies you
 will be able to run your tests quickly, for quick feedback during
 development.
 
-## Quick start ##
-
-I have set up
-[a demo Android project](https://github.com/zmalltalker/android-pojo-demo-app)
-which you can clone to have a look right away.
-
 ## Preparing your Android project ##
 
 You will be setting up a Gradle subproject in your Android project,
@@ -106,3 +100,9 @@ git submodule add \
 	android-pojo-demo
 git submodule update --init
 ```
+
+## For the very impatient ##
+
+I have set up
+[a demo Android project](https://github.com/zmalltalker/android-pojo-demo-app)
+which you can clone to have a look right away.
