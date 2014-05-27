@@ -78,15 +78,11 @@ Now, just run your test suite with `Ctrl-R` and watch that green bar!
 
 ## The subproject ##
 
-This project is a very basic Gradle project using the `java` and
-`application` plugins. This allows adding both production and test
+This project is a very basic Gradle project using the `java` plugin. This allows adding both production and test
 code (as you can tell, I'm no Gradle expert), in familiar locations:
 
 * Production code in `src/main/java`
 * Test code in `src/test/java`
-
-It also allows you to specify a main class to be run if you execute
-the jar directly, but that's not used in this project.
 
 ## Use submodules ##
 
@@ -101,7 +97,7 @@ git submodule add \
 git submodule update --init
 ```
 
-## For the very impatient ##
+## For the very impatient##
 
 I have set up
 [a demo Android project](https://github.com/zmalltalker/android-pojo-demo-app)
