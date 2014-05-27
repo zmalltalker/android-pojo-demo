@@ -22,7 +22,7 @@ Assuming your Android project's root directory is
 
 ```
 cd ~/Projects/myproject
-git checkout https://github.com/zmalltalker/android-pojo-demo.git
+git clone https://github.com/zmalltalker/android-pojo-demo.git
 ```
 
 This checks out this repository into the `android-pojo-demo` directory
@@ -75,3 +75,28 @@ out the page like this:
   dropdown
 
 Now, just run your test suite with `Ctrl-R` and watch that green bar!
+
+## The subproject ##
+
+This project is a very basic Gradle project using the `java` and
+`application` plugins. This allows adding both production and test
+code (as you can tell, I'm no Gradle expert), in familiar locations:
+
+* Production code in `src/main/java`
+* Test code in `src/test/java`
+
+It also allows you to specify a main class to be run if you execute
+the jar directly, but that's not used in this project.
+
+## Use submodules ##
+
+Rather than checking out a separate Git repository into your Android
+project, you should rather use Git submodules to reference this
+code. To do this:
+
+```
+git submodule add \
+	https://github.com/zmalltalker/android-pojo-demo.git\
+	android-pojo-demo
+git submodule update --init
+```
